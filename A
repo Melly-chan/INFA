@@ -1,0 +1,27 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int a,b,c,sum,max,p;
+    cin>>a>>b;
+    c=0;
+    for(a;a<=b;a++){
+		if (a%11==0){
+			if (a%3==0){
+				if(a%2==1 or a%2==-1){
+					sum=0;
+					if (a>=0){p=a;}
+					else if (a<0){p=-a;}
+					while (p>=2){
+						if (p%2==0){sum=sum+1;}
+						p=p/2;
+					}
+					if (sum==5){c=c+1;max=a;}
+				}
+			}
+		}
+    }
+    cout<<c<<" "<<max;
+    return 0;
+}
